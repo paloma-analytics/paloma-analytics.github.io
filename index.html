@@ -1,145 +1,294 @@
-<!DOCTYPE html> 
-<html lang="pt-BR"> 
-<head> 
-<meta charset="UTF-8" /> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-<title>Paloma Santos</title> 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paloma Santos</title>
 
-<!-- Ícones --> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-<style> 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; } 
-body { background-color: #E5BCA9; color: #6B7556; line-height: 1.6; } 
-section { padding: 80px 10%; } 
-h1, h2, h3 { color: #6B7556; } 
-h2 { margin-bottom: 40px; font-size: 32px; } 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-.hero { display: flex; flex-direction: column; gap: 20px; } 
-.hero h1 { font-size: 48px; } 
-.hero h3 { color: #C87D87; font-weight: 500; } 
-.linkedin { font-size: 28px; color: #6B7556; width: fit-content; transition: all 0.3s ease; } 
-.linkedin:hover { color: #C87D87; transform: scale(1.1); } 
+    body {
+      background-color: #E5BCA9;
+      color: #6B7556;
+      line-height: 1.6;
+    }
 
-.card { background: #FBEAD6; border: 2px solid #C87D87; padding: 24px; border-radius: 12px; transition: all 0.3s ease; } 
-.card:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); } 
+    section {
+      padding: 80px 10%;
+    }
 
-.about { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; } 
-.photo-wrapper { width: 260px; height: 260px; border-radius: 50%; padding: 6px; background: linear-gradient(360deg, #F0C4CB, #C87D87, #E5BCA9); animation: rotate 8s linear infinite; } 
-.photo-wrapper img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; } 
-@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } } 
+    h1, h2, h3 {
+      color: #6B7556;
+    }
 
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; } 
-.skill { display: flex; align-items: center; gap: 12px; font-size: 18px; } 
-.skill i { font-size: 26px; color: #6B7556; transition: color 0.3s; } 
-.skill:hover i { color: #C87D87; } 
+    h2 {
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
 
-.services { display: flex; gap: 30px; } 
+    /* HERO */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
-.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; } 
+    .hero h1 {
+      font-size: 48px;
+    }
 
-.contact { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; } 
+    .hero h3 {
+      color: #C87D87;
+      font-weight: 500;
+    }
 
-@media (max-width: 900px) { 
-.about { grid-template-columns: 1fr; text-align: center; } 
-.photo-wrapper { margin: 0 auto; } 
-.services { flex-direction: column; } 
-} 
-</style> 
-</head> 
+    .linkedin {
+      font-size: 28px;
+      color: #6B7556;
+      width: fit-content;
+      transition: all 0.3s ease;
+    }
 
-<body> 
+    .linkedin:hover {
+      color: #C87D87;
+      transform: scale(1.1);
+    }
 
-<section class="hero"> 
-<h1>Paloma Santos</h1> 
-<h3>Análise de Dados | Inteligência de Mercado | Modelagem Analítica</h3> 
-<a class="linkedin" href="https://www.linkedin.com/in/paloma-araújo-579289209" target="_blank"> 
-<i class="fab fa-linkedin"></i> 
-</a> 
-<p> 
-Atuo com análise de dados aplicada ao negócio, transformando bases operacionais em informações claras para apoiar decisões estratégicas. Trabalho desde a validação e organização dos dados até a construção de indicadores e dashboards executivos, com foco em vendas, reservas, margens e performance de produtos no setor de turismo. 
-</p> 
-</section> 
+    /* CARDS */
+    .card {
+      background: #FBEAD6;
+      border: 2px solid #C87D87;
+      padding: 24px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
 
-<section> 
-<h2>Sobre mim</h2> 
-<div class="about"> 
-<div> 
-<p> 
-Trabalho com dados como ferramenta de entendimento do negócio e apoio à tomada de decisão. Minha atuação envolve analisar o desempenho comercial, identificar padrões e desvios, estruturar métricas consistentes e traduzir informações complexas em visualizações acessíveis para diferentes áreas da empresa. 
-<br><br> 
-Atuo desde o tratamento e modelagem das bases até o desenvolvimento de dashboards em Power BI, utilizando DAX, Power Query e Excel. Também utilizo SQL básico, Python e automações com n8n para tornar os processos analíticos mais eficientes e confiáveis. 
-</p> 
-</div> 
-<div class="photo-wrapper"> 
-<img src="https://github.com/paloma-analytics/.github.io/blob/main/images/paloma.jpg?raw=true" alt="Paloma Santos"> 
-</div> 
-</div> 
-</section> 
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
 
-<section> 
-<h2>Experiência</h2> 
-<div class="card"> 
-<h3>Analista Jr de Inteligência de Mercado</h3> 
-<p style="color:#C87D87;">2024 – atual</p> 
-<p> 
-Trabalho com dados como ferramenta de entendimento e apoio à tomada de decisão. Meu foco está na análise, modelagem de dados, raciocínio lógico e estatística aplicada, sempre com uma leitura crítica das informações antes da visualização. Atuo estruturando análises de ponta a ponta, do tratamento dos dados à construção de métricas e dashboards executivos. 
-</p> 
-</div> 
-</section> 
+    /* SOBRE MIM */
+    .about {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
 
-<section> 
-<h2>Skills</h2> 
-<div class="skills-grid"> 
-<div class="card skill"><i class="fab fa-python"></i>Python</div> 
-<div class="card skill"><i class="fas fa-database"></i>SQL</div> 
-<div class="card skill"><i class="fas fa-chart-bar"></i>Power BI</div> 
-<div class="card skill"><i class="fab fa-git-alt"></i>Git</div> 
-<div class="card skill"><i class="fas fa-chart-line"></i>Looker Studio</div> 
-<div class="card skill"><i class="fab fa-figma"></i>Figma</div> 
-</div> 
-</section> 
+    .photo-wrapper {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      padding: 6px;
+      background: linear-gradient(360deg, #F0C4CB, #C87D87, #E5BCA9);
+      animation: rotate 8s linear infinite;
+    }
 
-<section> 
-<h2>Serviços</h2> 
-<div class="services"> 
-<div class="card"> 
-<h3>Criação de Dashboards</h3> 
-<p> 
-Desenvolvimento de dashboards interativos em Power BI e Looker Studio com foco em indicadores de negócio e apoio à tomada de decisão. 
-</p> 
-</div> 
-<div class="card"> 
-<h3>Automações</h3> 
-<p> 
-Desenvolvimento de automações para integração de sistemas e orquestração de processos analíticos, reduzindo tarefas manuais e aumentando eficiência por meio de fluxos no n8n. 
-</p> 
-</div> 
-</div> 
-</section> 
+    .photo-wrapper img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
 
-<section> 
-<h2>Projetos</h2> 
-<div class="projects"> 
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
 
-<a href="https://app.powerbi.com/view?r=eyJrIjoiZWU2ZDhkMTctMTdlYy00YTE4LThiNTUtZTU5ODVkNGE1NzM1IiwidCI6IjJlZGFmNGM0LTM2ZmItNDIzNi05NzM3LTQ0NTAwMzc3MzllMyJ9" target="_blank" style="text-decoration:none; color:inherit;"> 
-<div class="card"> 
-<h3>Performance de Vendas</h3> 
-<p> 
-Dashboard interativo desenvolvido em Power BI para acompanhamento de indicadores comerciais, análise de variações ao longo do tempo e suporte à tomada de decisão estratégica. 
-</p> 
-</div> 
-</a> 
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
 
-</div> 
-</section> 
+    .skill {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 18px;
+    }
 
-<section class="contact"> 
-<h2>Contato</h2> 
-<div class="card"> 
-📧 palomasantosmaster@gmail.com 
-</div> 
-</section> 
+    .skill i {
+      font-size: 26px;
+      color: #6B7556;
+      transition: color 0.3s;
+    }
 
-</body> 
+    .skill:hover i {
+      color: #C87D87;
+    }
+
+    /* SERVIÇOS */
+    .services {
+      display: flex;
+      gap: 30px;
+    }
+
+    /* PROJETOS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    /* CONTATO */
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 900px) {
+      .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .photo-wrapper {
+        margin: 0 auto;
+      }
+
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Paloma Santos</h1>
+    <h3>Análise de Dados | Inteligência de Mercado | Modelagem Analítica</h3>
+
+    <a class="linkedin" href="https://www.linkedin.com/in/paloma-araújo-579289209" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <p>
+      Atuo com análise de dados aplicada ao negócio, transformando bases operacionais em informações claras para apoiar decisões estratégicas. Trabalho desde a validação e organização dos dados até a construção de indicadores e dashboards executivos, com foco em vendas, reservas, margens e performance de produtos no setor de turismo.
+    </p>
+  </section>
+
+  <!-- SOBRE MIM -->
+  <section>
+    <h2>Sobre mim</h2>
+
+    <div class="about">
+      <div>
+        <p>
+          Trabalho com dados como ferramenta de entendimento do negócio e apoio à tomada de decisão. Minha atuação envolve analisar o desempenho comercial, identificar padrões e desvios, estruturar métricas consistentes e traduzir informações complexas em visualizações acessíveis para diferentes áreas da empresa.
+          <br><br>
+          Atuo desde o tratamento e modelagem das bases até o desenvolvimento de dashboards em Power BI, utilizando DAX, Power Query e Excel. Também utilizo SQL básico, Python e automações com n8n para tornar os processos analíticos mais eficientes e confiáveis.
+        </p>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="https://github.com/paloma-analytics/.github.io/blob/main/images/paloma.jpg?raw=true" alt="Paloma Santos">
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section>
+    <h2>Experiência</h2>
+
+    <div class="card">
+      <h3>Analista Jr de Inteligência de Mercado</h3>
+      <p style="color:#C87D87;">2024 – atual</p>
+      <p>
+        Trabalho com dados como ferramenta de entendimento e apoio à tomada de decisão. Meu foco está na análise, modelagem de dados, raciocínio lógico e estatística aplicada, sempre com uma leitura crítica das informações antes da visualização. Atuo estruturando análises de ponta a ponta, do tratamento dos dados à construção de métricas e dashboards executivos.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+      <div class="card skill"><i class="fab fa-python"></i>Python</div>
+      <div class="card skill"><i class="fas fa-database"></i>SQL</div>
+      <div class="card skill"><i class="fas fa-chart-bar"></i>Power BI</div>
+      <div class="card skill"><i class="fab fa-git-alt"></i>Git</div>
+      <div class="card skill"><i class="fas fa-chart-line"></i>Looker Studio</div>
+      <div class="card skill"><i class="fab fa-figma"></i>Figma</div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section>
+    <h2>Serviços</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>Criação de Dashboards</h3>
+        <p>
+          Desenvolvimento de dashboards interativos em Power BI e Looker Studio com foco em indicadores de negócio e apoio à tomada de decisão.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Automações</h3>
+        <p>
+          Desenvolvimento de automações para integração de sistemas e orquestração de processos analíticos, reduzindo tarefas manuais e aumentando eficiência por meio de fluxos no n8n.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section>
+    <h2>Projetos</h2>
+
+    <div class="projects">
+      <div class="card">
+        <h3>Análise de Performance de Vendas e Reservas</h3>
+        <p>
+          Análise focada no acompanhamento do desempenho comercial, com validação das bases, definição de métricas-chave e construção de dashboards para identificar variações relevantes ao longo do tempo.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Dashboard de Margens e Rentabilidade</h3>
+        <p>
+          Projeto voltado à análise de margens e rentabilidade dos produtos, com modelagem de dados e medidas em DAX para apoiar decisões estratégicas.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Monitoramento de Indicadores de Performance</h3>
+        <p>
+          Consolidação de indicadores estratégicos com foco em padronização, consistência dos cálculos e apresentação clara para áreas internas e diretoria.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact">
+    <h2>Contato</h2>
+
+    <div class="card">
+      📧 palomasantosmaster@gmail.com
+    </div>
+  </section>
+
+</body>
 </html>
