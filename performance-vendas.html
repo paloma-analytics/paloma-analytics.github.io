@@ -76,22 +76,55 @@ p{
 line-height:1.6;
 }
 
-/* LINK DO DASHBOARD */
+/* PREVIEW DO DASHBOARD */
 
-.dashboard-link{
-display:inline-flex;
-align-items:center;
-gap:8px;
-margin-top:10px;
+.dashboard-preview{
+display:block;
+margin-top:20px;
+background:#ffffff;
+border-radius:14px;
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+padding:20px;
 text-decoration:none;
 color:#000;
+transition:0.25s;
+}
+
+.dashboard-preview:hover{
+transform:translateY(-4px);
+}
+
+.dashboard-preview img{
+width:100%;
+border-radius:10px;
+aspect-ratio:16/9;
+object-fit:cover;
+}
+
+.preview-title{
+font-size:18px;
+font-weight:600;
+margin-top:14px;
+}
+
+.preview-desc{
+font-size:14px;
+margin-top:6px;
+}
+
+.preview-open{
+margin-top:12px;
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
 }
 
 /* GRID INTERNO */
 
 .inner-grid{
 display:grid;
-grid-template-columns:260px 1fr;
+grid-template-columns:1fr 260px;
 gap:30px;
 margin-top:20px;
 }
@@ -103,6 +136,14 @@ background:#ffaacb;
 border-radius:18px;
 padding:20px;
 font-size:13px;
+}
+
+.tech-item{
+margin-bottom:16px;
+}
+
+.tech-item i{
+margin-right:8px;
 }
 
 /* CARDS DE INSIGHTS */
@@ -136,8 +177,21 @@ Voltar
 
 <h1>Performance de Vendas</h1>
 
-<a class="dashboard-link" href="https://app.powerbi.com/view?r=eyJrIjoiZWU2ZDhkMTctMTdlYy00YTE4LThiNTUtZTU5ODVkNGE1NzM1IiwidCI6IjJlZGFmNGM0LTM2ZmItNDIzNi05NzM3LTQ0NTAwMzc3MzllMyJ9" target="_blank">
-Abrir Dashboard <i class="fas fa-arrow-up-right-from-square"></i>
+<a class="dashboard-preview" href="https://app.powerbi.com/view?r=eyJrIjoiZWU2ZDhkMTctMTdlYy00YTE4LThiNTUtZTU5ODVkNGE1NzM1IiwidCI6IjJlZGFmNGM0LTM2ZmItNDIzNi05NzM3LTQ0NTAwMzc3MzllMyJ9" target="_blank">
+
+<img src="https://github.com/paloma-analytics/.github.io/blob/main/images/dashboard-preview.jpg?raw=true">
+
+<div class="preview-title">Dashboard Performance de Vendas</div>
+
+<div class="preview-desc">
+Painel analítico desenvolvido em Power BI para acompanhamento de indicadores comerciais, análise de metas e performance de vendedores.
+</div>
+
+<div class="preview-open">
+<i class="fas fa-arrow-up-right-from-square"></i>
+Ver dashboard
+</div>
+
 </a>
 
 <h2>O Desafio</h2>
@@ -154,32 +208,6 @@ O desafio foi transformar essas informações em um painel analítico que permit
 </p>
 
 <div class="inner-grid">
-
-<div class="tech-card">
-
-<strong>Tech Stack</strong>
-<br><br>
-
-<strong>Power BI</strong><br>
-Modelagem de dados e desenvolvimento de dashboards interativos.
-<br><br>
-
-<strong>DAX Avançado</strong><br>
-Criação de medidas dinâmicas e lógica analítica para storytelling de dados.
-<br><br>
-
-<strong>Power Query</strong><br>
-Processos de ETL, limpeza e transformação de dados, além de criação de variáveis analíticas.
-<br><br>
-
-<strong>Figma</strong><br>
-Prototipação de layout e design da interface do dashboard.
-<br><br>
-
-<strong>Estatística</strong><br>
-Segmentação de clientes e análise de Pareto para identificação de padrões de comportamento e concentração de resultados.
-
-</div>
 
 <div>
 
@@ -203,6 +231,43 @@ O painel foi estruturado em três camadas analíticas principais:
 
 Essa estrutura permite que o usuário navegue do macro (resultado geral) até o micro (detalhamento por vendedor, categoria ou região) de forma intuitiva.
 </p>
+
+</div>
+
+<div class="tech-card">
+
+<strong>Tech Stack</strong>
+<br><br>
+
+<div class="tech-item">
+<i class="fas fa-chart-bar"></i>
+<strong>Power BI</strong><br>
+Modelagem de dados e desenvolvimento de dashboards interativos.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-brain"></i>
+<strong>DAX Avançado</strong><br>
+Criação de medidas dinâmicas e lógica analítica para storytelling de dados.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-database"></i>
+<strong>Power Query</strong><br>
+Processos de ETL, limpeza e transformação de dados, além de criação de variáveis analíticas.
+</div>
+
+<div class="tech-item">
+<i class="fab fa-figma"></i>
+<strong>Figma</strong><br>
+Prototipação de layout e design da interface do dashboard.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-chart-pie"></i>
+<strong>Estatística</strong><br>
+Segmentação de clientes e análise de Pareto para identificação de padrões de comportamento e concentração de resultados.
+</div>
 
 </div>
 
