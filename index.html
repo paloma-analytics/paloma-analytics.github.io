@@ -4,23 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paloma Santos</title>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Inter, sans-serif;
 }
-
 body{
 background:#1f1f1f;
 padding:40px;
 }
-
 .grid{
 max-width:1200px;
 margin:auto;
@@ -28,9 +23,7 @@ display:grid;
 grid-template-columns:repeat(12,1fr);
 gap:26px;
 }
-
 /* CARD PADRÃO */
-
 .card{
 background:#EFECE3;
 border:4px solid #ffaacb;
@@ -39,23 +32,17 @@ padding:26px;
 color:#000;
 transition:0.25s;
 }
-
 .card:hover{
 transform:translateY(-6px);
 }
-
 /* ICON HOVER */
-
 i{
 transition:0.25s;
 }
-
 i:hover{
 transform:translateY(-4px);
 }
-
 /* CONTACT BAR */
-
 .contact-bar{
 grid-column:span 12;
 display:flex;
@@ -63,37 +50,30 @@ justify-content:space-between;
 align-items:center;
 font-size:14px;
 }
-
 /* HERO */
-
 .hero-left{
 grid-column:span 7;
 height:395px;
 }
-
 .hero-left h1{
 font-size:52px;
 font-weight:800;
 }
-
 .hero-left h3{
 margin-top:8px;
 font-weight:500;
 font-size:18px;
 color:#ffaacb;
 }
-
 .hero-icons{
 margin-top:18px;
 display:flex;
 gap:18px;
 font-size:22px;
 }
-
 .hero-icons i{
 color:#ffaacb;
 }
-
 .hero-left button{
 margin-top:18px;
 padding:12px 24px;
@@ -104,17 +84,14 @@ color:#000;
 cursor:pointer;
 transition:0.25s;
 }
-
 .hero-left button:hover{
 transform:translateY(-4px);
 }
-
 .hero-left p{
 margin-top:18px;
 line-height:1.6;
 font-size:15px;
 }
-
 .hero-right{
 grid-column:span 5;
 display:flex;
@@ -122,9 +99,7 @@ align-items:center;
 justify-content:center;
 height:395px;
 }
-
 /* BORDA RGB ROTATIVA */
-
 .hero-right img{
 height:105%;
 border-radius:18px;
@@ -133,15 +108,12 @@ background:linear-gradient(45deg,#EC9C9D,#FFAACB,#C87D87,#F0C4CB);
 background-size:300% 300%;
 animation:rgbBorder 6s linear infinite;
 }
-
 @keyframes rgbBorder{
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
 }
-
 /* ABOUT */
-
 .about-card{
 grid-column:span 12;
 display:grid;
@@ -149,107 +121,83 @@ grid-template-columns:1fr 320px;
 gap:30px;
 align-items:center;
 }
-
 .about-card h2{
 color:#28292b;
 }
-
 /* ABOUT STATS */
-
 .about-cards{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:14px;
 }
-
 .about-cards .card{
 background:#ffaacb;
 color:#28292b;
 text-align:center;
 padding:18px;
 }
-
 .about-cards h3{
 font-size:12px;
 }
-
 .highlight{
 font-size:27px;
 font-weight:700;
 margin-top:6px;
 }
-
 /* SERVICES */
-
 .services{
 grid-column:span 12;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:26px;
 }
-
 .services .card{
 text-align:center;
 }
-
 .services i{
 font-size:24px;
 margin-bottom:10px;
 color:#ffaacb;
 display:block;
 }
-
 .services h3{
 color:#ffaacb;
 }
-
 /* EXPERIENCE */
-
 .experience{
 grid-column:span 7;
 }
-
 .experience h2{
 color:#28292b;
 }
-
 /* SKILLS */
-
 .skills{
 grid-column:span 5;
 }
-
 .skills h2{
 color:#28292b;
 }
-
 .skills-group{
 margin-top:14px;
 }
-
 .skills-group h3{
 color:#ffaacb;
 margin-bottom:10px;
 }
-
 .skill{
 margin-bottom:16px;
 }
-
 .skill-row{
 display:flex;
 align-items:center;
 gap:10px;
 }
-
 .skill-row i{
 color:#ffaacb;
 }
-
 .stars{
 margin-left:auto;
 }
-
 .skill-bar{
 height:6px;
 background:#ddd;
@@ -257,44 +205,34 @@ border-radius:10px;
 margin-top:6px;
 overflow:hidden;
 }
-
 .skill-fill{
 height:100%;
 background:#ffaacb;
 }
-
 /* PROJECTS */
-
 .projects{
 grid-column:span 12;
 display:flex;
 flex-direction:column;
 }
-
 .projects h2{
 color:#28292b;
 }
-
 .projects-subtitle{
 margin-bottom:20px;
 color:#ffaacb;
 }
-
 /* GRID DOS CARDS DE PROJETO */
-
 .projects-grid{
 display:flex;
 gap:20px;
 flex-wrap:nowrap;
 }
-
 /* CARD INDIVIDUAL */
-
 .project-card{
 flex:1;
 max-width:calc(33.333% - 14px);
 }
-
 .project-tag{
 display:inline-block;
 background:#000;
@@ -304,9 +242,7 @@ border-radius:20px;
 font-size:12px;
 margin:10px 0;
 }
-
 /* BOTÃO ANALISAR PROJETO */
-
 .project-link{
 display:inline-flex;
 align-items:center;
@@ -320,32 +256,24 @@ border-radius:30px;
 font-size:14px;
 transition:0.25s;
 }
-
 .project-link:hover{
 transform:translateY(-4px);
 }
-
 /* CONTACT */
-
 .contact-section{
 grid-column:span 12;
 display:flex;
 gap:20px;
 }
-
 .contact-section .card{
 flex:1;
 text-align:center;
 }
-
 /* RESPONSIVO */
-
 @media(max-width:900px){
-
 .grid{
 grid-template-columns:1fr;
 }
-
 .hero-left,
 .hero-right,
 .about-card,
@@ -356,29 +284,22 @@ grid-template-columns:1fr;
 .contact-bar{
 grid-column:span 1;
 }
-
 .about-card{
 grid-template-columns:1fr;
 }
-
 .services{
 grid-template-columns:1fr;
 }
-
 .contact-section{
 flex-direction:column;
 }
-
 .projects-grid{
 flex-direction:column;
 }
-
 .project-card{
 max-width:100%;
 }
-
 }
-
 </style>
 </head>
 
@@ -430,7 +351,6 @@ com foco em gerar análises que ajudem a entender performance e orientar decisõ
 <h2>Sobre mim</h2>
 
 <p>
-
 Trabalho com dados porque gosto de entender o que está por trás dos números.
 Me interessa analisar informações com senso crítico, identificar padrões, desvios e relações,
 e transformar dados brutos em análises que realmente façam sentido para quem precisa decidir.
@@ -442,7 +362,6 @@ aprofundando meus conhecimentos em análise, modelagem de dados, estatística ap
 e raciocínio analítico. Tenho interesse em evoluir cada vez mais na parte analítica,
 indo além da visualização para explorar os dados de forma estratégica,
 conectando métricas ao contexto do negócio.
-
 </p>
 
 </div>
@@ -476,27 +395,19 @@ conectando métricas ao contexto do negócio.
 <div class="services">
 
 <div class="card">
-
 <i class="fas fa-chart-pie"></i>
-
 <h3>Criação de Dashboards</h3>
-
 <p>
 Desenvolvimento de dashboards interativos focados em indicadores de negócio e apoio à tomada de decisão.
 </p>
-
 </div>
 
 <div class="card">
-
 <i class="fas fa-robot"></i>
-
 <h3>Automações</h3>
-
 <p>
 Automação de processos analíticos e integração de dados para reduzir tarefas manuais e aumentar eficiência.
 </p>
-
 </div>
 
 </div>
@@ -506,7 +417,6 @@ Automação de processos analíticos e integração de dados para reduzir tarefa
 <h2>Experiência</h2>
 
 <p>
-
 Analista Jr de Inteligência de Mercado<br>
 2024 – atual
 
@@ -526,7 +436,6 @@ e utilizados de forma prática no acompanhamento de resultados.
 
 Meu trabalho envolve transformar necessidades de negócio em métricas claras,
 análises consistentes e visualizações que apoiam decisões.
-
 </p>
 
 </div>
@@ -540,17 +449,86 @@ análises consistentes e visualizações que apoiam decisões.
 <h3>Ferramentas</h3>
 
 <div class="skill">
-
 <div class="skill-row">
 <i class="fas fa-chart-bar"></i>
 Power BI
 <span class="stars">⭐⭐⭐</span>
 </div>
-
 <div class="skill-bar">
 <div class="skill-fill" style="width:70%"></div>
 </div>
+</div>
 
+<div class="skill">
+<div class="skill-row">
+<i class="fab fa-figma"></i>
+Figma
+<span class="stars">⭐⭐⭐</span>
+</div>
+<div class="skill-bar">
+<div class="skill-fill" style="width:95%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-row">
+<i class="fas fa-chart-line"></i>
+Looker Studio
+<span class="stars">⭐⭐☆</span>
+</div>
+<div class="skill-bar">
+<div class="skill-fill" style="width:70%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-row">
+<i class="fab fa-github"></i>
+GitHub
+<span class="stars">⭐⭐☆</span>
+</div>
+<div class="skill-bar">
+<div class="skill-fill" style="width:70%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-row">
+<i class="fas fa-robot"></i>
+n8n
+<span class="stars">⭐⭐☆</span>
+</div>
+<div class="skill-bar">
+<div class="skill-fill" style="width:70%"></div>
+</div>
+</div>
+
+</div>
+
+<div class="skills-group">
+
+<h3>Linguagens</h3>
+
+<div class="skill">
+<div class="skill-row">
+<i class="fab fa-python"></i>
+Python
+<span class="stars">⭐☆☆</span>
+</div>
+<div class="skill-bar">
+<div class="skill-fill" style="width:35%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-row">
+<i class="fas fa-database"></i>
+SQL
+<span class="stars">⭐☆☆</span>
+</div>
+<div class="skill-bar">
+<div class="skill-fill" style="width:35%"></div>
+</div>
 </div>
 
 </div>
@@ -567,30 +545,61 @@ Projetos de análise de dados
 
 <div class="projects-grid">
 
-<!-- NOVO CARD -->
+<div class="card project-card">
+<h3>Performance de Vendas</h3>
+<p>
+Dashboard interativo desenvolvido em Power BI para acompanhamento de indicadores comerciais, análise de variações ao longo do tempo e suporte à tomada de decisão estratégica.
+</p>
+<div class="project-tag">Power BI</div>
+<a class="project-link" href="performance-vendas.html">
+Analisar Projeto
+<i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+<div class="card project-card">
+<h3>Visão Geral de Vendas</h3>
+<p>
+Dashboard analítico desenvolvido em Power BI para acompanhar o desempenho das vendas em relação às metas definidas, permitindo identificar rapidamente desvios e oportunidades de melhoria.
+</p>
+<div class="project-tag">Power BI</div>
+<a class="project-link" href="visão-geral-vendas.html">
+Analisar Projeto
+<i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+<div class="card project-card">
+<h3>Vendas por Produtos</h3>
+<p>
+Dashboard focado na análise da performance dos produtos vendidos, permitindo identificar participação nas vendas, variações de desempenho e oportunidades de otimização comercial.
+</p>
+<div class="project-tag">Power BI</div>
+<a class="project-link" href="vendas-por-produtos.html">
+Analisar Projeto
+<i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+<!-- NOVO CARD ADICIONADO -->
 
 <div class="card project-card">
 
 <h3>Análise de Dados de Acidentes</h3>
 
 <p>
-Projeto de análise de dados de acidentes de trânsito no Brasil em 2024 utilizando R.
-Explora padrões e aplica técnicas estatísticas para gerar insights sobre segurança no trânsito
+Projeto de análise exploratória de dados de acidentes de trânsito no Brasil utilizando R. 
+O estudo investiga padrões, distribuição geográfica e fatores associados aos acidentes,
+utilizando técnicas estatísticas e visualizações analíticas para gerar insights sobre segurança viária.
 </p>
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
-
 <div class="project-tag">R</div>
-<div class="project-tag">Github</div>
+<div class="project-tag">GitHub</div>
 
 <a class="project-link" href="https://github.com/paloma-analytics/detran.sp" target="_blank">
-
-Ir pra repositório
+Ir para Repositório
 <i class="fas fa-arrow-right"></i>
-
 </a>
-
-</div>
 
 </div>
 
@@ -606,7 +615,7 @@ Ir pra repositório
 
 <div class="card">
 <i class="fas fa-phone" style="color:#ffaacb"></i>
-(11) 96199-0271
+11 961990271
 </div>
 
 </div>
