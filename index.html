@@ -23,7 +23,6 @@ display:grid;
 grid-template-columns:repeat(12,1fr);
 gap:26px;
 }
-/* CARD PADRÃO */
 .card{
 background:#EFECE3;
 border:4px solid #ffaacb;
@@ -35,14 +34,12 @@ transition:0.25s;
 .card:hover{
 transform:translateY(-6px);
 }
-/* ICON HOVER */
 i{
 transition:0.25s;
 }
 i:hover{
 transform:translateY(-4px);
 }
-/* CONTACT BAR */
 .contact-bar{
 grid-column:span 12;
 display:flex;
@@ -50,7 +47,6 @@ justify-content:space-between;
 align-items:center;
 font-size:14px;
 }
-/* HERO */
 .hero-left{
 grid-column:span 7;
 height:395px;
@@ -74,8 +70,16 @@ font-size:22px;
 .hero-icons i{
 color:#ffaacb;
 }
-.hero-left button{
+
+/* BOTÕES HERO */
+.hero-buttons{
+display:flex;
+gap:12px;
 margin-top:18px;
+}
+
+.hero-buttons button,
+.hero-buttons a{
 padding:12px 24px;
 border:none;
 border-radius:30px;
@@ -83,10 +87,15 @@ background:#ffaacb;
 color:#000;
 cursor:pointer;
 transition:0.25s;
+text-decoration:none;
+display:inline-block;
 }
-.hero-left button:hover{
+
+.hero-buttons button:hover,
+.hero-buttons a:hover{
 transform:translateY(-4px);
 }
+
 .hero-left p{
 margin-top:18px;
 line-height:1.6;
@@ -99,7 +108,6 @@ align-items:center;
 justify-content:center;
 height:395px;
 }
-/* BORDA RGB ROTATIVA */
 .hero-right img{
 height:105%;
 border-radius:18px;
@@ -113,7 +121,6 @@ animation:rgbBorder 6s linear infinite;
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
 }
-/* ABOUT */
 .about-card{
 grid-column:span 12;
 display:grid;
@@ -124,7 +131,6 @@ align-items:center;
 .about-card h2{
 color:#28292b;
 }
-/* ABOUT STATS */
 .about-cards{
 display:grid;
 grid-template-columns:repeat(2,1fr);
@@ -144,7 +150,6 @@ font-size:27px;
 font-weight:700;
 margin-top:6px;
 }
-/* SERVICES */
 .services{
 grid-column:span 12;
 display:grid;
@@ -163,19 +168,11 @@ display:block;
 .services h3{
 color:#ffaacb;
 }
-/* EXPERIENCE */
 .experience{
 grid-column:span 7;
 }
-.experience h2{
-color:#28292b;
-}
-/* SKILLS */
 .skills{
 grid-column:span 5;
-}
-.skills h2{
-color:#28292b;
 }
 .skills-group{
 margin-top:14px;
@@ -209,40 +206,20 @@ overflow:hidden;
 height:100%;
 background:#ffaacb;
 }
-/* PROJECTS */
 .projects{
 grid-column:span 12;
 display:flex;
 flex-direction:column;
 }
-.projects h2{
-color:#28292b;
-}
-.projects-subtitle{
-margin-bottom:20px;
-color:#ffaacb;
-}
-/* GRID DOS CARDS DE PROJETO */
 .projects-grid{
 display:flex;
 gap:20px;
 flex-wrap:wrap;
 }
-/* CARD INDIVIDUAL */
 .project-card{
 flex:1;
 max-width:calc(33.333% - 14px);
 }
-.project-tag{
-display:inline-block;
-background:#000;
-color:#fff;
-padding:4px 10px;
-border-radius:20px;
-font-size:12px;
-margin:10px 0;
-}
-/* BOTÃO ANALISAR PROJETO */
 .project-link{
 display:inline-flex;
 align-items:center;
@@ -253,13 +230,11 @@ margin-top:10px;
 padding:10px 18px;
 background:#ffaacb;
 border-radius:30px;
-font-size:14px;
 transition:0.25s;
 }
 .project-link:hover{
 transform:translateY(-4px);
 }
-/* CONTACT */
 .contact-section{
 grid-column:span 12;
 display:flex;
@@ -269,70 +244,54 @@ gap:20px;
 flex:1;
 text-align:center;
 }
-
-/* RESPONSIVO */
-@media(max-width:900px){
-
-body{
-padding:20px;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-.hero-left,
-.hero-right,
-.about-card,
-.services,
-.experience,
-.skills,
-.projects,
-.contact-bar{
-grid-column:span 1;
-}
-
-.hero-left,
-.hero-right{
-height:auto;
-}
-
-.hero-right img{
-height:auto;
-max-width:100%;
-}
-
-.about-card{
-grid-template-columns:1fr;
-}
-
-.services{
-grid-template-columns:1fr;
-}
-
-.contact-bar{
-flex-direction:column;
-gap:10px;
-text-align:center;
-}
-
-.contact-section{
-flex-direction:column;
-}
-
-.projects-grid{
-flex-direction:column;
-flex-wrap:wrap;
-}
-
-.project-card{
-max-width:100%;
-}
-
-}
 </style>
 </head>
 
+<body>
+
+<div class="grid">
+
+<div class="card contact-bar">
+<div>📧 palomasantosmaster@gmail.com</div>
+<div>📍 São Paulo</div>
+<div><i class="fas fa-phone" style="color:#ffaacb"></i> 11 961990271</div>
+</div>
+
+<div class="card hero-left">
+
+<h1>Paloma Santos</h1>
+<h3>Análise de Dados | Inteligência de Mercado | Modelagem Analítica</h3>
+
+<div class="hero-icons">
+<a href="https://www.linkedin.com/in/paloma-araújo-579289209" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+
+<div class="hero-buttons">
+
+<button onclick="document.getElementById('projetos').scrollIntoView({ behavior: 'smooth' });">
+Veja meu trabalho
+</button>
+
+<a href="curriculo.html">
+Visualizar Currículo
+</a>
+
+</div>
+
+<p>
+Atuo com análise de dados aplicada ao negócio,<br>
+transformando bases operacionais em informações claras para apoiar decisões estratégicas.
+</p>
+
+</div>
+
+<div class="card hero-right">
+<img src="https://github.com/paloma-analytics/.github.io/blob/main/images/paloma.jpg?raw=true">
+</div>
+
+</div>
 <body>
 
 <div class="grid">
