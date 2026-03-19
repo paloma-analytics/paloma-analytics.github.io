@@ -226,7 +226,7 @@ color:#ffaacb;
 .projects-grid{
 display:flex;
 gap:20px;
-flex-wrap:wrap; /* AJUSTE AQUI */
+flex-wrap:wrap;
 }
 /* CARD INDIVIDUAL */
 .project-card{
@@ -269,11 +269,18 @@ gap:20px;
 flex:1;
 text-align:center;
 }
+
 /* RESPONSIVO */
 @media(max-width:900px){
+
+body{
+padding:20px;
+}
+
 .grid{
 grid-template-columns:1fr;
 }
+
 .hero-left,
 .hero-right,
 .about-card,
@@ -284,22 +291,44 @@ grid-template-columns:1fr;
 .contact-bar{
 grid-column:span 1;
 }
+
+.hero-left,
+.hero-right{
+height:auto;
+}
+
+.hero-right img{
+height:auto;
+max-width:100%;
+}
+
 .about-card{
 grid-template-columns:1fr;
 }
+
 .services{
 grid-template-columns:1fr;
 }
+
+.contact-bar{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
 .contact-section{
 flex-direction:column;
 }
+
 .projects-grid{
 flex-direction:column;
 flex-wrap:wrap;
 }
+
 .project-card{
 max-width:100%;
 }
+
 }
 </style>
 </head>
@@ -581,8 +610,6 @@ Analisar Projeto
 <i class="fas fa-arrow-right"></i>
 </a>
 </div>
-
-<!-- NOVO CARD ADICIONADO -->
 
 <div class="card project-card">
 
