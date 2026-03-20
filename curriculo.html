@@ -47,11 +47,11 @@ margin-top:20px;
 
 h3{
 margin-top:15px;
-font-size:12px;
+font-size:13px;
 }
 
 p{
-font-size:12px;
+font-size:13px;
 }
 
 .back{
@@ -75,25 +75,33 @@ display:flex;
 align-items:flex-start;
 gap:12px;
 margin-bottom:12px;
-font-size:12px;
+font-size:13px;
 }
 
-.cert-card{
+.cert-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px 20px;
+font-size:13px;
+}
+
+.cert-item{
 background:#ffaacb;
 padding:10px 14px;
 border-radius:20px;
-margin-bottom:10px;
-font-size:12px;
 }
 
 ul{
 margin-top:10px;
 padding-left:18px;
-font-size:12px;
+font-size:13px;
 }
 
 @media(max-width:900px){
 .grid{
+grid-template-columns:1fr;
+}
+.cert-grid{
 grid-template-columns:1fr;
 }
 }
@@ -209,15 +217,21 @@ Ciência de Dados (Anhanguera). Tecnólogo<br>
 
 <h2>Certificações</h2>
 
-<div class="cert-card">Databricks com Spark</div>
-<div class="cert-card">N8N: Automação Inteligente de Tarefas e Processos</div>
-<div class="cert-card">Linguagem DAX Avançado</div>
-<div class="cert-card">Power Query Avançado</div>
-<div class="cert-card">Python para Análise de Dados</div>
-<div class="cert-card">Estatística para Análise de Dados</div>
-<div class="cert-card">Storytelling e Visualização de Dados Essencial 2.0</div>
-<div class="cert-card">APIs e Linguagem M Avançado</div>
-<div class="cert-card">Modelagem de Dados Avançados</div>
+<div class="cert-grid">
+<div class="cert-item">Databricks com Spark</div>
+<div class="cert-item">N8N: Automação Inteligente de Tarefas e Processos</div>
+
+<div class="cert-item">Linguagem DAX Avançado</div>
+<div class="cert-item">Power Query Avançado</div>
+
+<div class="cert-item">Python para Análise de Dados</div>
+<div class="cert-item">Estatística para Análise de Dados</div>
+
+<div class="cert-item">Storytelling e Visualização de Dados Essencial 2.0</div>
+<div class="cert-item">APIs e Linguagem M Avançado</div>
+
+<div class="cert-item">Modelagem de Dados Avançados</div>
+</div>
 
 </div>
 
