@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+Claro! Aqui está o código completo:
+html<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -222,16 +223,15 @@ color:#28292b;
 margin-bottom:20px;
 color:#ffaacb;
 }
-/* GRID DOS CARDS DE PROJETO */
+/* GRID DOS CARDS DE PROJETO - 3 por fileira */
 .projects-grid{
-display:flex;
+display:grid;
+grid-template-columns:repeat(3, 1fr);
 gap:20px;
-flex-wrap:nowrap;
 }
 /* CARD INDIVIDUAL */
 .project-card{
-flex:1;
-max-width:calc(33.333% - 14px);
+width:100%;
 }
 .project-tag{
 display:inline-block;
@@ -240,7 +240,7 @@ color:#fff;
 padding:4px 10px;
 border-radius:20px;
 font-size:12px;
-margin:10px 0;
+margin:10px 4px 0 0;
 }
 /* BOTÃO ANALISAR PROJETO */
 .project-link{
@@ -294,7 +294,7 @@ grid-template-columns:1fr;
 flex-direction:column;
 }
 .projects-grid{
-flex-direction:column;
+grid-template-columns:1fr;
 }
 .project-card{
 max-width:100%;
@@ -586,22 +586,31 @@ Analisar Projeto
 </div>
 
 <div class="card project-card">
-
 <h3>Análise de Dados de Acidentes</h3>
-
 <p>
 Projeto de análise de dados de acidentes de trânsito no Brasil em 2024 utilizando R.
 Explora padrões e aplica técnicas estatísticas para gerar insights sobre segurança no trânsito.
 </p>
-
 <div class="project-tag">R</div>
 <div class="project-tag">GitHub</div>
-
 <a class="project-link" href="https://github.com/paloma-analytics/detran.sp" target="_blank">
 Ir para Repositório
 <i class="fas fa-arrow-right"></i>
 </a>
+</div>
 
+<div class="card project-card">
+<h3>Rede de Recomendação de Livros</h3>
+<p>
+Projeto de análise de dados com foco na construção de uma rede de recomendação de livros utilizando Python e Jupyter Notebook. Explora relações entre títulos e aplica técnicas analíticas para gerar recomendações baseadas em padrões de dados.
+</p>
+<div class="project-tag">Python</div>
+<div class="project-tag">Notebook</div>
+<div class="project-tag">GitHub</div>
+<a class="project-link" href="https://github.com/paloma-analytics/book-recommendation-network" target="_blank">
+Ir para Repositório
+<i class="fas fa-arrow-right"></i>
+</a>
 </div>
 
 </div>
