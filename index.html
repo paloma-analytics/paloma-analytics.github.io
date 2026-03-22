@@ -1,5 +1,4 @@
-Claro! Aqui está o código completo:
-html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -54,7 +53,8 @@ font-size:14px;
 /* HERO */
 .hero-left{
 grid-column:span 7;
-height:395px;
+min-height:395px;
+height:auto;
 }
 .hero-left h1{
 font-size:52px;
@@ -98,11 +98,14 @@ grid-column:span 5;
 display:flex;
 align-items:center;
 justify-content:center;
-height:395px;
+min-height:395px;
+height:auto;
 }
 /* BORDA RGB ROTATIVA */
 .hero-right img{
-height:105%;
+width:100%;
+max-width:320px;
+height:auto;
 border-radius:18px;
 padding:4px;
 background:linear-gradient(45deg,#EC9C9D,#FFAACB,#C87D87,#F0C4CB);
@@ -269,29 +272,78 @@ gap:20px;
 flex:1;
 text-align:center;
 }
-/* RESPONSIVO */
+/* ===================== */
+/*       RESPONSIVO      */
+/* ===================== */
 @media(max-width:900px){
+
+body{
+padding:16px;
+}
+
 .grid{
 grid-template-columns:1fr;
+gap:16px;
 }
-.hero-left,
-.hero-right,
-.about-card,
-.services,
-.experience,
-.skills,
-.projects,
+
 .contact-bar{
 grid-column:span 1;
-}
-.about-card{
-grid-template-columns:1fr;
-}
-.services{
-grid-template-columns:1fr;
-}
-.contact-section{
 flex-direction:column;
+gap:8px;
+text-align:center;
+font-size:13px;
+}
+
+/* HERO */
+.hero-left{
+grid-column:span 1;
+min-height:unset;
+}
+.hero-left h1{
+font-size:32px;
+}
+.hero-left h3{
+font-size:15px;
+}
+.hero-left p{
+font-size:14px;
+}
+
+.hero-right{
+grid-column:span 1;
+min-height:unset;
+justify-content:center;
+padding:10px 0;
+}
+.hero-right img{
+width:70%;
+max-width:260px;
+height:auto;
+}
+
+/* ABOUT */
+.about-card{
+grid-column:span 1;
+grid-template-columns:1fr;
+}
+
+/* SERVICES */
+.services{
+grid-column:span 1;
+grid-template-columns:1fr;
+}
+
+/* EXPERIENCE / SKILLS */
+.experience{
+grid-column:span 1;
+}
+.skills{
+grid-column:span 1;
+}
+
+/* PROJECTS */
+.projects{
+grid-column:span 1;
 }
 .projects-grid{
 grid-template-columns:1fr;
@@ -299,6 +351,13 @@ grid-template-columns:1fr;
 .project-card{
 max-width:100%;
 }
+
+/* CONTACT */
+.contact-section{
+grid-column:span 1;
+flex-direction:column;
+}
+
 }
 </style>
 </head>
@@ -605,7 +664,7 @@ Ir para Repositório
 Projeto de análise de dados com foco na construção de uma rede de recomendação de livros utilizando Python e Jupyter Notebook. Explora relações entre títulos e aplica técnicas analíticas para gerar recomendações baseadas em padrões de dados.
 </p>
 <div class="project-tag">Python</div>
-<div class="project-tag">Jupyter</div>
+<div class="project-tag">Notebook</div>
 <div class="project-tag">GitHub</div>
 <a class="project-link" href="https://github.com/paloma-analytics/book-recommendation-network" target="_blank">
 Ir para Repositório
