@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vendas por Produtos</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter, sans-serif;
+}
+
+body{
+background:#1f1f1f;
+padding:40px;
+}
+
+.grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(12,1fr);
+gap:26px;
+}
+
+.card{
+background:#EFECE3;
+border:4px solid #ffaacb;
+border-radius:24px;
+padding:26px;
+color:#000;
+}
+
+.back{
+margin-bottom:20px;
+display:inline-flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+background:#ffaacb;
+color:#000;
+padding:10px 18px;
+border-radius:30px;
+}
+
+.main-card{
+grid-column:span 12;
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+h2{
+margin-top:30px;
+margin-bottom:10px;
+color:#28292b;
+}
+
+p{
+line-height:1.6;
+}
+
+.dashboard-preview{
+display:block;
+margin-top:20px;
+background:#ffffff;
+border-radius:14px;
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+padding:20px;
+text-decoration:none;
+color:#000;
+transition:0.25s;
+}
+
+.dashboard-preview:hover{
+transform:translateY(-4px);
+}
+
+.dashboard-preview img{
+width:100%;
+border-radius:10px;
+aspect-ratio:16/9;
+object-fit:cover;
+}
+
+.preview-title{
+font-size:18px;
+font-weight:600;
+margin-top:14px;
+}
+
+.preview-desc{
+font-size:14px;
+margin-top:6px;
+}
+
+.preview-open{
+margin-top:12px;
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+}
+
+.inner-grid{
+display:grid;
+grid-template-columns:1fr 260px;
+gap:30px;
+margin-top:20px;
+}
+
+.tech-card{
+background:#ffaacb;
+border-radius:18px;
+padding:20px;
+font-size:13px;
+}
+
+.tech-item{
+margin-bottom:16px;
+}
+
+.tech-item i{
+margin-right:8px;
+}
+
+.insight-cards{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.insight{
+background:#ffaacb;
+border-radius:18px;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<a href="index.html" class="back">
+<i class="fas fa-arrow-left"></i>
+Voltar
+</a>
+
+<div class="card main-card">
+
+<h1>Vendas por Produtos</h1>
+
+<a class="dashboard-preview" href="https://app.powerbi.com/view?r=eyJrIjoiYjBhZDZkY2MtZmZjMS00MTMzLWFmZjYtOWI2NWRmMThmNzA0IiwidCI6IjJlZGFmNGM0LTM2ZmItNDIzNi05NzM3LTQ0NTAwMzc3MzllMyJ9" target="_blank">
+
+<img src="https://github.com/paloma-analytics/.github.io/blob/main/images/dashboard-preview.jpg?raw=true">
+
+<div class="preview-title">Dashboard Vendas por Produtos</div>
+
+<div class="preview-desc">
+Dashboard analítico para acompanhamento da performance de vendas, análise de produtos, vendedores e comportamento dos clientes.
+</div>
+
+<div class="preview-open">
+<i class="fas fa-arrow-up-right-from-square"></i>
+Ver dashboard
+</div>
+
+</a>
+
+<h2>O Desafio</h2>
+
+<p>
+A área comercial precisava de uma forma estruturada de acompanhar o desempenho das vendas, entender o comportamento de clientes e identificar quais vendedores, produtos e marcas estavam gerando maior impacto no faturamento.
+</p>
+
+<div class="inner-grid">
+
+<div>
+
+<h2>A Solução</h2>
+
+<p>
+Para resolver esse problema, desenvolvi um Dashboard analítico no Power BI estruturado em três camadas de análise, permitindo explorar o desempenho das vendas sob diferentes perspectivas.
+<br><br>
+A primeira camada apresenta uma visão geral do negócio, consolidando indicadores estratégicos como faturamento total, quantidade de vendas, produtos vendidos e volume de descontos aplicados. Essa visão também permite acompanhar a evolução das vendas ao longo do tempo e identificar os vendedores com maior contribuição para a receita.
+<br><br>
+A segunda camada é dedicada à análise de desempenho dos vendedores, permitindo avaliar métricas como faturamento individual, ranking de vendas, participação por categoria de produto e evolução da performance ao longo dos trimestres.
+<br><br>
+A terceira camada aprofunda a análise no comportamento dos produtos e dos clientes, explorando a participação das categorias no faturamento, concentração de vendas por marcas, perfil demográfico dos clientes e relação entre descontos concedidos e faturamento gerado.
+</p>
+
+</div>
+
+<div class="tech-card">
+
+<strong>Tech Stack</strong>
+<br><br>
+
+<div class="tech-item">
+<i class="fas fa-brain"></i>
+<strong>DAX (Data Analysis Expressions)</strong><br>
+Criação de medidas analíticas para indicadores como faturamento total, produtos vendidos, ticket médio, ranking de vendedores e cálculos de participação percentual.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-database"></i>
+<strong>Modelagem de Dados</strong><br>
+Estruturação do modelo relacional para permitir análises por vendedor, produto, categoria, marca, período e perfil de cliente.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-chart-line"></i>
+<strong>Storytelling</strong><br>
+O dashboard foi estruturado utilizando princípios de storytelling com dados, organizando as informações em uma sequência lógica de exploração analítica.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-eye"></i>
+<strong>Visão Estratégica</strong><br>
+Apresenta os principais indicadores do negócio e uma visão consolidada do desempenho das vendas.
+</div>
+
+</div>
+
+</div>
+
+<h2>Principais Entregas & Insights</h2>
+
+<div class="insight-cards">
+
+<div class="insight">
+<strong>Monitoramento da Performance Comercial</strong>
+<br><br>
+O dashboard consolida indicadores essenciais como Faturamento Total, Quantidade de Vendas, Produtos Vendidos e Descontos Aplicados, oferecendo uma visão clara do desempenho da operação comercial.
+<br><br>
+Essa visão executiva permite acompanhar rapidamente a saúde do negócio e identificar variações no volume de vendas.
+</div>
+
+<div class="insight">
+<strong>Evolução Temporal das Vendas</strong>
+<br><br>
+A análise da evolução do faturamento ao longo do trimestre permite identificar tendências de crescimento, padrões de comportamento e períodos de maior desempenho comercial.
+<br><br>
+Essa visualização ajuda gestores a entender a dinâmica das vendas e planejar ações comerciais de forma mais estratégica.
+</div>
+
+<div class="insight">
+<strong>Análise de Produtos e Categorias</strong>
+<br><br>
+A análise de faturamento por categoria permite identificar quais segmentos de produtos possuem maior participação na receita da empresa.
+<br><br>
+Essa visão auxilia na definição de estratégias comerciais voltadas para categorias com maior potencial de crescimento ou maior representatividade no faturamento.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
