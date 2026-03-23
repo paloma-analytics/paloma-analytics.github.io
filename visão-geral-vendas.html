@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visão Geral de Vendas</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter, sans-serif;
+}
+
+body{
+background:#1f1f1f;
+padding:40px;
+}
+
+.grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(12,1fr);
+gap:26px;
+}
+
+.card{
+background:#EFECE3;
+border:4px solid #ffaacb;
+border-radius:24px;
+padding:26px;
+color:#000;
+}
+
+.back{
+margin-bottom:20px;
+display:inline-flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+background:#ffaacb;
+color:#000;
+padding:10px 18px;
+border-radius:30px;
+}
+
+.main-card{
+grid-column:span 12;
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+h2{
+margin-top:30px;
+margin-bottom:10px;
+color:#28292b;
+}
+
+p{
+line-height:1.6;
+}
+
+/* CONTAINER DO DASHBOARD */
+
+.dashboard-embed{
+margin-top:30px;
+margin-bottom:30px;
+max-width:1100px;
+height:600px;
+margin-left:auto;
+margin-right:auto;
+background:#ffffff;
+border-radius:14px;
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+overflow:hidden;
+}
+
+.dashboard-embed iframe{
+width:100%;
+height:100%;
+border:0;
+}
+
+.inner-grid{
+display:grid;
+grid-template-columns:1fr 260px;
+gap:30px;
+margin-top:20px;
+}
+
+.tech-card{
+background:#ffaacb;
+border-radius:18px;
+padding:20px;
+font-size:13px;
+}
+
+.tech-item{
+margin-bottom:16px;
+}
+
+.tech-item i{
+margin-right:8px;
+}
+
+.insight-cards{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.insight{
+background:#ffaacb;
+border-radius:18px;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<a href="index.html" class="back">
+<i class="fas fa-arrow-left"></i>
+Voltar
+</a>
+
+<div class="card main-card">
+
+<h1>Visão Geral de Vendas</h1>
+
+<div class="dashboard-embed">
+
+<iframe 
+title="Vendas x Meta" 
+src="https://app.powerbi.com/view?r=eyJrIjoiYmQ0MGQ2YmQtODUyOC00ZTM3LThlMTgtYTQyMjZkMTQyYjkyIiwidCI6IjJlZGFmNGM0LTM2ZmItNDIzNi05NzM3LTQ0NTAwMzc3MzllMyJ9" 
+allowFullScreen="true">
+</iframe>
+
+</div>
+
+<h2>O Desafio</h2>
+
+<p>
+A área comercial precisava acompanhar de forma clara o desempenho das vendas em relação às metas estabelecidas, além de entender quais vendedores, produtos e segmentos estavam influenciando diretamente os resultados do negócio.
+<br><br>
+Embora os dados de vendas existissem, eles estavam dispersos em relatórios operacionais, dificultando análises rápidas e tomadas de decisão estratégicas. Isso tornava difícil responder perguntas fundamentais para a gestão comercial.
+<br><br>
+O desafio foi transformar esses dados em uma visão analítica estruturada, permitindo acompanhar o desempenho da operação comercial, identificar oportunidades de melhoria e garantir maior transparência na análise dos resultados de vendas.
+</p>
+
+<div class="inner-grid">
+
+<div>
+
+<h2>A Solução</h2>
+
+<p>
+Para resolver esse desafio, desenvolvi um Dashboard interativo no Power BI focado na análise de desempenho comercial e atingimento de metas, estruturado em duas camadas analíticas principais.
+<br><br>
+A primeira camada apresenta uma visão estratégica do negócio, reunindo os principais indicadores de vendas, evolução do faturamento ao longo do tempo, ticket médio e participação dos produtos no volume total de vendas.
+<br><br>
+A segunda camada permite um aprofundamento analítico, oferecendo uma tela de detalhamento das vendas onde é possível visualizar cada transação realizada, incluindo informações como número da nota fiscal, data da venda, vendedor responsável, categoria do produto e valor faturado.
+<br><br>
+Essa estrutura permite que o usuário navegue de forma natural entre indicadores estratégicos e dados operacionais, facilitando tanto análises gerenciais quanto investigações mais detalhadas sobre o comportamento das vendas.
+</p>
+
+</div>
+
+<div class="tech-card">
+
+<strong>Tech Stack</strong>
+<br><br>
+
+<div class="tech-item">
+<i class="fas fa-chart-bar"></i>
+<strong>Power BI</strong><br>
+Desenvolvimento do dashboard interativo, modelagem semântica dos dados e criação das visualizações analíticas para acompanhamento da performance de vendas e metas.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-brain"></i>
+<strong>DAX (Data Analysis Expressions)</strong><br>
+Criação de medidas analíticas para indicadores como faturamento, ticket médio, atingimento de metas, ranking de vendedores e comparações temporais.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-database"></i>
+<strong>Power Query</strong><br>
+Processos de ETL, incluindo limpeza, transformação e preparação dos dados de vendas para análise no modelo.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-project-diagram"></i>
+<strong>Modelagem de Dados</strong><br>
+Estruturação do modelo analítico em formato relacional para permitir análises por vendedor, produto, período e categoria.
+</div>
+
+</div>
+
+</div>
+
+<h2>Principais Entregas & Insights</h2>
+
+<div class="insight-cards">
+
+<div class="insight">
+<strong>Monitoramento de Performance Comercial</strong>
+<br><br>
+O dashboard consolida indicadores essenciais como Faturamento Total, Ticket Médio e Percentual de Atingimento de Meta, oferecendo uma visão clara do desempenho da operação comercial.
+<br><br>
+A comparação com o ano anterior permite avaliar a evolução do negócio e identificar tendências de crescimento ou desaceleração.
+</div>
+
+<div class="insight">
+<strong>Acompanhamento de Metas de Vendas</strong>
+<br><br>
+Foi implementado um indicador de atingimento de metas, permitindo acompanhar o quanto o resultado real está próximo dos objetivos definidos pela empresa.
+<br><br>
+Essa análise facilita o monitoramento contínuo da performance da equipe comercial e possibilita ajustes rápidos na estratégia de vendas quando necessário.
+</div>
+
+<div class="insight">
+<strong>Análise Temporal do Faturamento</strong>
+<br><br>
+A visualização da evolução das vendas ao longo dos trimestres permite observar padrões de crescimento, sazonalidade e períodos de maior desempenho comercial.
+<br><br>
+Essa visão ajuda gestores a identificar momentos estratégicos para intensificar campanhas comerciais ou revisar metas.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
