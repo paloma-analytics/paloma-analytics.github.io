@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Performance de Vendas</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter, sans-serif;
+}
+
+body{
+background:#1f1f1f;
+padding:40px;
+}
+
+.grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(12,1fr);
+gap:26px;
+}
+
+/* CARD PADRÃO */
+
+.card{
+background:#EFECE3;
+border:4px solid #ffaacb;
+border-radius:24px;
+padding:26px;
+color:#000;
+}
+
+/* BOTÃO VOLTAR */
+
+.back{
+margin-bottom:20px;
+display:inline-flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+background:#ffaacb;
+color:#000;
+padding:10px 18px;
+border-radius:30px;
+}
+
+/* CARD PRINCIPAL */
+
+.main-card{
+grid-column:span 12;
+}
+
+/* TITULOS */
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+h2{
+margin-top:30px;
+margin-bottom:10px;
+color:#28292b;
+}
+
+p{
+line-height:1.6;
+}
+
+/* CONTAINER DO DASHBOARD */
+
+.dashboard-embed{
+margin-top:30px;
+margin-bottom:30px;
+max-width:1100px;
+height:600px;
+margin-left:auto;
+margin-right:auto;
+background:#ffffff;
+border-radius:14px;
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+overflow:hidden;
+}
+
+.dashboard-embed iframe{
+width:100%;
+height:100%;
+border:0;
+}
+
+/* GRID INTERNO */
+
+.inner-grid{
+display:grid;
+grid-template-columns:1fr 260px;
+gap:30px;
+margin-top:20px;
+}
+
+/* CARD TECH STACK */
+
+.tech-card{
+background:#ffaacb;
+border-radius:18px;
+padding:20px;
+font-size:13px;
+}
+
+.tech-item{
+margin-bottom:16px;
+}
+
+.tech-item i{
+margin-right:8px;
+}
+
+/* CARDS DE INSIGHTS */
+
+.insight-cards{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.insight{
+background:#ffaacb;
+border-radius:18px;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<a href="index.html" class="back">
+<i class="fas fa-arrow-left"></i>
+Voltar
+</a>
+
+<div class="card main-card">
+
+<h1>Performance de Vendas</h1>
+
+<div class="dashboard-embed">
+
+<iframe
+title="Performance de Vendas"
+src="https://app.powerbi.com/view?r=eyJrIjoiZWU2ZDhkMTctMTdlYy00YTE4LThiNTUtZTU5ODVkNGE1NzM1IiwidCI6IjJlZGFmNGM0LTM2ZmItNDIzNi05NzM3LTQ0NTAwMzc3MzllMyJ9"
+allowFullScreen="true">
+</iframe>
+
+</div>
+
+<h2>O Desafio</h2>
+
+<p>
+A área comercial precisava de uma forma clara de acompanhar a performance de vendas e o atingimento de metas, entendendo rapidamente quais vendedores, categorias e regiões estavam impulsionando o faturamento e onde estavam os desvios de desempenho.
+<br><br>
+Os dados existiam, mas estavam dispersos em relatórios operacionais que dificultavam responder perguntas essenciais do negócio, como:
+"Quem realmente está impulsionando o faturamento?",
+"Quais produtos ou categorias têm maior impacto na receita?" e
+"Quais vendedores estão acima ou abaixo da meta?"
+<br><br>
+O desafio foi transformar essas informações em um painel analítico que permitisse monitorar desempenho, identificar oportunidades e apoiar decisões estratégicas da área comercial.
+</p>
+
+<div class="inner-grid">
+
+<div>
+
+<h2>A Solução</h2>
+
+<p>
+Desenvolvi um Dashboard interativo no Power BI focado em análise de performance comercial, combinando indicadores estratégicos, comparação entre resultados reais e metas e análise detalhada da composição do faturamento.
+<br><br>
+
+O painel foi estruturado em três camadas analíticas principais:
+<br><br>
+
+<strong>Visão de Performance Geral</strong> – acompanhamento dos principais indicadores de vendas e evolução do faturamento ao longo do tempo.
+<br><br>
+
+<strong>Análise Real vs Meta</strong> – comparação direta entre resultados alcançados e metas definidas por vendedor.
+<br><br>
+
+<strong>Árvore de Decomposição</strong> – exploração analítica do faturamento por categoria, cidade e segmentos de clientes.
+<br><br>
+
+Essa estrutura permite que o usuário navegue do macro (resultado geral) até o micro (detalhamento por vendedor, categoria ou região) de forma intuitiva.
+</p>
+
+</div>
+
+<div class="tech-card">
+
+<strong>Tech Stack</strong>
+<br><br>
+
+<div class="tech-item">
+<i class="fas fa-chart-bar"></i>
+<strong>Power BI</strong><br>
+Modelagem de dados e desenvolvimento de dashboards interativos.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-brain"></i>
+<strong>DAX Avançado</strong><br>
+Criação de medidas dinâmicas e lógica analítica para storytelling de dados.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-database"></i>
+<strong>Power Query</strong><br>
+Processos de ETL, limpeza e transformação de dados, além de criação de variáveis analíticas.
+</div>
+
+<div class="tech-item">
+<i class="fab fa-figma"></i>
+<strong>Figma</strong><br>
+Prototipação de layout e design da interface do dashboard.
+</div>
+
+<div class="tech-item">
+<i class="fas fa-chart-pie"></i>
+<strong>Estatística</strong><br>
+Segmentação de clientes e análise de Pareto para identificação de padrões de comportamento e concentração de resultados.
+</div>
+
+</div>
+
+</div>
+
+<h2>Principais Entregas & Insights</h2>
+
+<div class="insight-cards">
+
+<div class="insight">
+<strong>Monitoramento de Performance Comercial</strong>
+<br><br>
+Criação de indicadores estratégicos de vendas como Faturamento Total, Margem Bruta e Quantidade de Vendas, permitindo acompanhar o desempenho da operação e identificar rapidamente períodos de maior crescimento.
+</div>
+
+<div class="insight">
+<strong>Análise de Atingimento de Metas</strong>
+<br><br>
+Implementação de um painel de Real vs Meta, permitindo visualizar quais vendedores estão superando ou ficando abaixo das metas estabelecidas.
+</div>
+
+<div class="insight">
+<strong>Identificação de Top Performers</strong>
+<br><br>
+Criação de um ranking dinâmico de vendedores que permite identificar rapidamente os profissionais com maior impacto no faturamento. Essa visão facilita ações de benchmark interno, replicando estratégias de vendedores de alta performance para o restante da equipe.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
