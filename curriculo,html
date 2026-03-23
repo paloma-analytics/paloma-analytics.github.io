@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo - Paloma</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter, sans-serif;
+}
+
+body{
+background:#1f1f1f;
+padding:40px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#EFECE3;
+border:4px solid #ffaacb;
+border-radius:24px;
+padding:26px;
+margin-bottom:20px;
+color:#000;
+}
+
+h1{
+text-align:center;
+font-size:42px;
+margin-bottom:20px;
+}
+
+h2{
+color:#ffaacb;
+margin-top:20px;
+}
+
+h3{
+margin-top:15px;
+font-size:13px;
+}
+
+p{
+font-size:13px;
+}
+
+.back{
+display:inline-block;
+margin-bottom:20px;
+padding:10px 20px;
+background:#ffaacb;
+border-radius:30px;
+text-decoration:none;
+color:#000;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.skill{
+display:flex;
+align-items:flex-start;
+gap:12px;
+margin-bottom:12px;
+font-size:13px;
+}
+
+.cert-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px 20px;
+font-size:13px;
+}
+
+.cert-item{
+background:#ffaacb;
+padding:10px 14px;
+border-radius:20px;
+}
+
+ul{
+margin-top:10px;
+padding-left:18px;
+font-size:13px;
+}
+
+@media(max-width:900px){
+.grid{
+grid-template-columns:1fr;
+}
+.cert-grid{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="index.html">← Voltar</a>
+
+<div class="card">
+
+<h1>Paloma Araujo dos Santos</h1>
+
+<p style="text-align:center;">
+Jardim Oratório, Mauá-SP<br>
+(11) 96199-0271 (Mobile)<br>
+palomasantosmaster@gmail.com<br>
+<a href="https://www.linkedin.com/in/paloma-araújo-579289209" target="_blank">
+www.linkedin.com/in/paloma-araújo-579289209
+</a>
+</p>
+
+<h2>Resumo Profissional</h2>
+<p>
+Analista Júnior de Inteligência de Mercado, estudante de Ciência de Dados, com atuação em análise de dados aplicada ao negócio. Experiência na estruturação, tratamento e modelagem de dados, construção de indicadores e desenvolvimento de análises voltadas ao acompanhamento de performance e apoio à tomada de decisão. Atuo conectando dados ao contexto do negócio, apoiando áreas como comercial e operações por meio da organização das bases, definição de métricas e comunicação de insights em dashboards e relatórios analíticos. Tenho interesse em aprofundar cada vez mais minha atuação analítica, indo além do visual para gerar análises que direcionem decisões.
+</p>
+
+<h2>Experiência Profissional</h2>
+
+<h3><b>• Analista Jr de Inteligência de Mercado</b></h3>
+<p>
+jan/2026-Atualmente<br>
+<b>Principais atividades:</b> Atuo na análise e acompanhamento de indicadores de vendas, reservas, margens e performance de produtos, apoiando áreas internas no entendimento dos dados e no acompanhamento dos resultados. Trabalho desde a validação, organização e padronização das bases até a construção, ajuste e manutenção de dashboards e métricas, sempre revisando regras de negócio para garantir consistência e confiabilidade das informações. Também participo da melhoria contínua das análises existentes, refinando indicadores para torná-los mais claros, acionáveis e alinhados às decisões do negócio. Apresento dashboards e análises para áreas internas e diretoria, apoiando a correta interpretação dos dados e o uso dos indicadores no acompanhamento de performance.
+</p>
+
+<h3><b>• Assistente de Inteligência de Mercado</b></h3>
+<p>
+set/2024 – jan/2026<br>
+<b>Principais atividades:</b> Atuei no desenvolvimento e atualização de dashboards e relatórios em Power BI e Excel, apoiando análises recorrentes de vendas, reservas, margens e produtos. Fui responsável pela integração, tratamento e organização de dados provenientes de diferentes fontes, estruturando bases analíticas que deram suporte à criação de indicadores utilizados pelas áreas internas. Também participei do levantamento de requisitos junto às áreas, da organização e documentação dos relatórios e da apresentação das análises, sempre buscando tornar os dados mais claros, acessíveis e úteis para o acompanhamento dos resultados no dia a dia.
+</p>
+
+<h3><b>• Jovem Aprendiz – Inteligência de Mercado</b></h3>
+<p>
+fev/2024 – set/2024<br>
+<b>Principais atividades:</b> Atuei no apoio à rotina analítica da área de Inteligência de Mercado, auxiliando na atualização e organização de relatórios operacionais em Excel e na extração de bases de dados do sistema interno da empresa. Realizei o tratamento inicial dos dados, padronização de informações e consolidação de indicadores básicos, além de apoiar na organização e estruturação de bases utilizadas como suporte para análises recorrentes da equipe.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>Competências</h2>
+
+<div class="skill">
+<i class="fas fa-chart-bar"></i>
+<div><b>Power BI</b> (modelagem de dados, DAX intermediário, visualização e storytelling)</div>
+</div>
+
+<div class="skill">
+<i class="fas fa-database"></i>
+<div><b>Power Query</b> (ETL, tratamento e transformação de dados)</div>
+</div>
+
+<div class="skill">
+<i class="fas fa-file-excel"></i>
+<div><b>Excel intermediário</b> (análises, relatórios e apoio operacional)</div>
+</div>
+
+<div class="skill">
+<i class="fas fa-database"></i>
+<div><b>SQL básico</b> (consultas simples e fundamentos)</div>
+</div>
+
+<div class="skill">
+<i class="fab fa-python"></i>
+<div><b>Python</b> (análises exploratórias e apoio à automação)</div>
+</div>
+
+<div class="skill">
+<i class="fas fa-robot"></i>
+<div><b>Automação de processos analíticos</b> (n8n)</div>
+</div>
+
+<div class="skill">
+<i class="fas fa-search"></i>
+<div><b>Análise exploratória de dados</b></div>
+</div>
+
+<div class="skill">
+<i class="fas fa-chart-line"></i>
+<div><b>Construção de indicadores</b> (acompanhamento de métricas de performance)</div>
+</div>
+
+<div class="skill">
+<i class="fab fa-figma"></i>
+<div><b>Figma</b> (criação de layouts e protótipos visuais para dashboards e comunicação analítica)</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Formação</h2>
+<p>
+Ciência de Dados (Anhanguera). Tecnólogo<br>
+06/2025 até 12/2027
+</p>
+
+<h2>Certificações</h2>
+
+<div class="cert-grid">
+<div class="cert-item">Databricks com Spark</div>
+<div class="cert-item">N8N: Automação Inteligente de Tarefas e Processos</div>
+
+<div class="cert-item">Linguagem DAX Avançado</div>
+<div class="cert-item">Power Query Avançado</div>
+
+<div class="cert-item">Python para Análise de Dados</div>
+<div class="cert-item">Estatística para Análise de Dados</div>
+
+<div class="cert-item">Storytelling e Visualização de Dados Essencial 2.0</div>
+<div class="cert-item">APIs e Linguagem M Avançado</div>
+
+<div class="cert-item">Modelagem de Dados Avançados</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
